@@ -62,7 +62,7 @@ public class Main {
                     break;
                 }
             }
-            if (isCommExist == false) {
+            if (!isCommExist) {
                 System.out.printf("Команда %s не найдена\n", commInput);
                 continue;
             }
@@ -81,7 +81,7 @@ public class Main {
                             break;
                         }
                     }
-                    if (isCommAnimalExist == false) {
+                    if (!isCommAnimalExist) {
                         System.out.printf("Тип животного %s не найден\n", animalCommInput);
                         continue;
                     }
